@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+
+  background: #7571ff;
+  padding: 2rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 180%;
+
+      color: #ffffff;
+    }
+  }
+}

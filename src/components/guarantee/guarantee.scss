@@ -1,0 +1,116 @@
+.guaranteeBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  height: 534px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    // logos
+    .logoBox {
+      width: 90px;
+      height: 90px;
+      border-radius: 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0 2rem 0;
+    }
+    .logoGuaranteeMsg {
+      background: #edecff;
+      transform: rotate(20deg);
+    }
+
+    .logoGuaranteeMoney {
+      background: #fff0e2;
+      transform: rotate(62deg);
+    }
+    .logoGuaranteeSupport {
+      background: #e2f6fc;
+      transform: rotate(107deg);
+    }
+    .logoGuaranteePayment {
+      background: #fee8ee;
+
+      transform: rotate(77deg);
+    }
+    .guaranteeText {
+      /* Body 1/Bold */
+
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 1rem;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      /* Neutral/1 */
+
+      color: #1b1c20;
+    }
+    .guarnteeTextDesc {
+      /* Body 2/Regular */
+
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      /* Neutral/3 */
+
+      color: #797b89;
+    }
+  }
+  .shipping {
+    justify-content: center;
+    align-items: center;
+  }
+  .support {
+    padding-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .guaranteeBox {
+    height: auto;
+    div {
+      // logos
+      .logoBox {
+        transform: rotate(0deg);
+      }
+      // .logoGuaranteeMsg {
+      //   background: #edecff;
+      //   transform: rotate(20deg);
+      // }
+
+      // .logoGuaranteeMoney {
+      //   background: #fff0e2;
+      //   transform: rotate(62deg);
+      // }
+      // .logoGuaranteeSupport {
+      // }
+      // .logoGuaranteePayment {
+      // }
+      // .guaranteeText {
+      // }
+      // .guarnteeTextDesc {
+      // }
+    }
+
+    .support {
+      padding-top: 0%;
+    }
+  }
+}

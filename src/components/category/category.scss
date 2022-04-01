@@ -1,0 +1,247 @@
+// category grid
+.cardBox {
+  // overflow-x: hidden;
+  .categoryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 900px;
+
+    .flexRow {
+      display: flex;
+      width: 100%;
+      // min-width: 450px;
+
+      .tablet {
+        border-radius: 20px;
+        background: #fee8ee
+          url('../../assets/images/landingPage/ipad-pro-m1-01200.png') no-repeat
+          bottom center;
+        padding: 15% 4rem;
+        box-sizing: border-box;
+        // box-sizing: border-box;
+        button {
+          margin-top: 3rem;
+        }
+      }
+      .laptop {
+        border-radius: 20px;
+
+        background: #e2f9ef
+          url('../../assets/images/landingPage/637096956683492064_MBP-16-touch-dd.png.png')
+          no-repeat 100% 10%;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 1rem;
+        box-sizing: border-box;
+        div {
+          margin-top: 40%;
+          // margin-left: 10%;
+        }
+        button {
+          margin-top: 4rem;
+        }
+      }
+
+      .watch {
+        border-radius: 20px;
+        height: 100%;
+        width: 50%;
+        margin-right: 1rem;
+        background: #fff0e2 url('../../assets/images/landingPage/watches.png')
+          no-repeat top right;
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+        box-sizing: border-box;
+      }
+      .headphone {
+        border-radius: 20px;
+        height: 100%;
+        width: 50%;
+        background: #e2f6fc
+          url('../../assets/images/landingPage/b3b898c9790dcbf77f3023b1a7fffe202e601e0e_1024_1024.png')
+          no-repeat bottom right;
+        box-sizing: border-box;
+        padding: 3rem;
+      }
+    }
+    .leftCategoryItems {
+      width: 50%;
+      div {
+        height: 50%;
+      }
+      .phone {
+        border-radius: 20px;
+        width: 100%;
+        margin-bottom: 1rem;
+        background: #edecff
+          url('../../assets/images/landingPage/iphone-12-tim-8.png') no-repeat
+          bottom;
+        box-sizing: border-box;
+        padding: 3rem;
+        .categoryBox {
+          display: flex;
+
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-between;
+          // padding: 3rem;
+        }
+      }
+    }
+    .rightCategoryItems {
+      width: 50%;
+      div {
+        width: 100%;
+      }
+      .flexRow {
+        height: 60%;
+        margin-top: 0;
+        .tablet,
+        .laptop {
+          margin-left: 1rem;
+        }
+      }
+      .accessories {
+        background: #fff7e4;
+        border-radius: 20px;
+        height: 40%;
+        width: calc(100% - 1rem);
+        margin: 1rem 0 0 1rem;
+        background-image: url('../../assets/images/landingPage/Group\ 8.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        padding: 1rem;
+        box-sizing: border-box;
+        .categoryBox {
+          display: flex;
+
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          // padding: 2rem;
+          div {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.seeAll {
+  background: #7571ff;
+  border-radius: 12px;
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  color: white;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  &:focus,
+  &:focus-within {
+    outline: none;
+  }
+}
+
+// mobile
+.mobileCardBox {
+  display: none;
+}
+
+.categoryTitle {
+  display: flex;
+  flex-direction: column;
+  .categoryCardTitle {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+
+    /* Neutral/1 */
+
+    color: #1b1c20;
+  }
+  .categoryCardDesc {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* Neutral/3 */
+
+    color: #797b89;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cardBox {
+    padding: 1rem;
+    .categoryGrid {
+      height: 700px;
+      .rightCategoryItems {
+        .tablet {
+          padding: 0.5rem;
+        }
+        .laptop {
+          div {
+            margin-top: 5.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardBox {
+    display: none;
+  }
+  .mobileCardBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    div {
+      margin: 1rem;
+      border-radius: 10px;
+    }
+    .smPhone {
+      background: #edecff
+        url('../../assets/images/landingPage/iphone-12-tim-8.png') no-repeat
+        bottom;
+    }
+    .smTablet {
+      background: #fee8ee
+        url('../../assets/images/landingPage/ipad-pro-m1-01200.png') no-repeat
+        right center;
+    }
+    .smLaptop {
+      background: #e2f9ef
+        url('../../assets/images/landingPage/637096956683492064_MBP-16-touch-dd.png.png')
+        no-repeat 100% 10%;
+    }
+    .smWatch {
+      background: #fff0e2 url('../../assets/images/landingPage/watches.png')
+        no-repeat top right;
+    }
+    .smHeadphone {
+      background: #e2f6fc
+        url('../../assets/images/landingPage/b3b898c9790dcbf77f3023b1a7fffe202e601e0e_1024_1024.png')
+        no-repeat bottom right;
+    }
+    .smAccessories {
+      background: #fff7e4 url('../../assets/images/landingPage/Group\ 8.png')
+        no-repeat;
+    }
+  }
+}

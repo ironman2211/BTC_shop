@@ -1,0 +1,138 @@
+.searchInput {
+  width: 100%;
+  position: relative;
+
+  input {
+    padding: 1rem 1rem 1rem 15rem;
+    width: 100%;
+    // margin-right: 9rem;
+    background: #ffffff;
+    border: none;
+    box-shadow: 0px 0px 8px 1px #cdcdcd;
+    border-radius: 34px;
+
+    &:focus-within,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .preInputIcons {
+    display: flex;
+    width: 100px;
+    left: 0;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 2rem;
+
+    height: 30px;
+    .vl {
+      border-left: 1px solid black;
+      height: 25px;
+      margin-right: 1.5rem;
+    }
+    .searchIcon {
+      display: flex;
+      align-items: center;
+      // justify-content: ;
+    }
+    .selectBox {
+      position: relative;
+      padding: 2rem;
+      align-items: center;
+      display: flex;
+      .loactionIcon {
+        position: absolute;
+        left: 0;
+        color: #5950;
+
+        width: 30px;
+        height: 30px;
+      }
+      select {
+        border: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #323232;
+        background: none;
+        &:focus-within,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+/* MUI input border bottom none */
+.css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    // justify-content: end;
+    justify-content: space-between;
+    font-size: x-small;
+  }
+  .searchInput {
+    margin: 2rem;
+    input {
+      padding: 0.5rem 0.5rem 0.5rem 15rem;
+      width: 18%;
+    }
+    .preInputIcons {
+      .selectBox {
+        .loactionIcon {
+          width: 15px;
+          height: 15px;
+        }
+        select {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// small mobile devices
+@media only screen and (max-width: 420px) {
+  .header {
+    // justify-content: end;
+    justify-content: space-between;
+    font-size: x-small;
+  }
+  .searchInput {
+    margin: 2rem;
+    input {
+      padding: 0.5rem 0.5rem 0.5rem 15rem;
+      width: 18%;
+    }
+    .preInputIcons {
+      .selectBox {
+        .loactionIcon {
+          width: 15px;
+          height: 15px;
+        }
+        select {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+// extra lg devices
+@media screen and (min-width: 1200px) {
+  .searchInput {
+    flex: 1;
+    input {
+      width: 80%;
+    }
+  }
+}

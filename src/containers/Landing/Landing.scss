@@ -1,0 +1,554 @@
+.landingPageBox {
+  overflow-x: hidden;
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .searchBox {
+      .searchDesc {
+        margin-top: 2rem;
+        span {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          color: #323232;
+          .register {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5950c8;
+          }
+        }
+      }
+    }
+  }
+
+  // info
+  .info {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+    .leftInfo {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      .btc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #5950c8;
+        text-align: center;
+      }
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        color: white;
+        position: relative;
+        width: 256px;
+        height: 52px;
+
+        border: none;
+        background: #7571ff;
+        border-radius: 12px;
+
+        span {
+          margin-left: 1rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .rightInfo {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      padding: 8rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        span:first-child {
+          margin-bottom: 1.2rem;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 37px;
+
+          color: #323232;
+        }
+        span:last-child {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          color: #323232;
+        }
+      }
+    }
+  }
+
+  .paddingBox {
+    padding: 8rem;
+    height: fit-content;
+
+    h3 {
+      margin-top: 10rem;
+      font-family: 'Abhaya Libre ExtraBold';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 60px;
+      /* identical to box height, or 125% */
+
+      text-align: center;
+
+      /* Neutral/1 */
+
+      color: #1b1c20;
+    }
+    // featured
+    .featured {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+    }
+    .buttonCenter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      .seeMore {
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        background: none;
+        border: 1.5px solid #e8e9ed;
+        box-sizing: border-box;
+        border-radius: 12px;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Neutral/2 */
+
+        color: #383a47;
+      }
+    }
+
+    .loadMore {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 24px;
+      background: none;
+      border: 1.5px solid #e8e9ed;
+      box-sizing: border-box;
+      border-radius: 12px;
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      /* Neutral/2 */
+
+      color: #383a47;
+    }
+    .testimonialHeadDesc {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+      margin-top: -1.5rem;
+      text-align: center;
+
+      /* Neutral/3 */
+
+      color: #797b89;
+    }
+
+    // testimonials
+    .testimonials {
+      margin-top: 5rem;
+      display: flex;
+      // justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    // trending
+    .trendingBox {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .landingPageBox {
+    .middle {
+      flex-direction: column;
+      .landingImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .searchBox {
+        .searchDesc {
+          margin-top: 2rem;
+          span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #323232;
+            .register {
+              font-family: 'Montserrat';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 17px;
+              color: #5950c8;
+            }
+          }
+        }
+      }
+    }
+    .info {
+      flex-direction: column;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      .leftInfo {
+        span {
+          margin: 0.4rem 0 0.4rem 0;
+        }
+      }
+      .rightInfo {
+        width: 100%;
+        div {
+          margin: 0 4rem 0 4rem;
+        }
+      }
+    }
+    .cardBox {
+      padding: 1rem;
+    }
+    .paddingBox {
+      padding: 0.2rem;
+      .trendingBox {
+        justify-content: center;
+      }
+      .featured {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .searchDesc {
+    margin-left: 2rem;
+  }
+  .landingPageBox {
+    .info {
+      margin-bottom: 2rem;
+      .leftInfo {
+        .btc {
+        }
+        button {
+          span {
+            margin-left: 1rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .rightInfo {
+        margin: 1rem 0;
+
+        padding: 2rem;
+        div {
+          margin: 0;
+          span:first-child {
+            font-size: 10px;
+            margin: 0;
+          }
+          span:last-child {
+            font-size: 12px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .cardBox {
+      padding: 0;
+      overflow-x: hidden;
+      width: 100%;
+      .categoryGrid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: unset;
+        // height: 600px;
+        div {
+          // margin: 1rem 0 1rem 1rem;
+          width: 100%;
+        }
+        .flexRow {
+          display: flex;
+          width: 100%;
+
+          .tablet {
+            margin: 0;
+          }
+          .laptop {
+            margin: 0;
+          }
+
+          .watch {
+            margin: 0;
+          }
+          .headphone {
+            height: 100%;
+            width: 50%;
+            margin: 0;
+          }
+
+          div {
+            // flex: 1;
+          }
+        }
+        .leftCategoryItems {
+          width: 100%;
+          div {
+            width: 100%;
+            height: 200px;
+          }
+          .phone {
+            background: #edecff;
+            border-radius: 20px;
+            width: 100%;
+
+            height: 200px;
+            margin: 0;
+          }
+        }
+        .rightCategoryItems {
+          width: 100%;
+          div {
+            width: 100%;
+            height: 200px;
+          }
+          .flexRow {
+            height: 200px;
+            margin-top: 0;
+            .tablet,
+            .laptop {
+              margin-left: 1rem;
+              margin: 0;
+            }
+          }
+          .accessories {
+            margin: 0;
+            height: 200px;
+            width: 100%;
+            background-size: 80% 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// small mobile
+// small mobile devices
+@media only screen and (max-width: 420px) {
+  .landingPageBox {
+    overflow-x: hidden;
+    .middle {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .landingImage {
+        margin-left: -4.5rem;
+      }
+      .searchBox {
+        .searchDesc {
+          margin-top: 2rem;
+          span {
+            font-size: 14px;
+
+            .register {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    // info
+    .info {
+      .leftInfo {
+        .btc {
+          font-size: 24px;
+        }
+        button {
+          padding: 1rem;
+          color: white;
+          width: 150px;
+          height: 52px;
+          span {
+            margin-left: 1rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .rightInfo {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+
+        div {
+          text-align: center;
+          span:first-child {
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+          }
+          span:last-child {
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    // category grid
+    .cardBox {
+      padding: 0;
+      overflow-x: hidden;
+      width: 100%;
+      .categoryGrid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: unset;
+        // height: 600px;
+        div {
+          // margin: 1rem 0 1rem 1rem;
+          width: 100%;
+        }
+        .flexRow {
+          display: flex;
+          width: 100%;
+
+          .tablet {
+            margin: 0;
+          }
+          .laptop {
+            margin: 0;
+          }
+
+          .watch {
+            margin: 0;
+          }
+          .headphone {
+            height: 100%;
+            width: 50%;
+            margin: 0;
+          }
+
+          div {
+            // flex: 1;
+          }
+        }
+        .leftCategoryItems {
+          width: 100%;
+          div {
+            width: 100%;
+            height: 150px;
+          }
+          .phone {
+            background: #edecff;
+            border-radius: 20px;
+            width: 100%;
+
+            height: 150px;
+            margin: 0;
+          }
+        }
+        .rightCategoryItems {
+          width: 100%;
+          div {
+            width: 100%;
+            height: 150px;
+          }
+          .flexRow {
+            height: 150px;
+            margin-top: 0;
+            .tablet,
+            .laptop {
+              margin-left: 1rem;
+              margin: 0;
+            }
+          }
+          .accessories {
+            margin: 0;
+            height: 150px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// extra lg devices
+@media screen and (min-width: 1200px) {
+  .landingImage {
+    flex: 1;
+  }
+  .searchBox {
+    flex: 1;
+    // margin-left: 20%;
+  }
+}

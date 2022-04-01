@@ -1,0 +1,149 @@
+.testimonialCardBox {
+  //   width: 250px;
+  //   height: 150px;
+  border: 1px solid black;
+  margin: 1rem;
+  border: 1.5px solid #e8e9ed;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 3rem;
+  width: 330px;
+  height: 330px;
+
+  .testimonialCardUpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .testimonialCardImg {
+      background: #000
+        url('../../assets/images/landingPage/iphone-12-tim-8.png') no-repeat;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+    }
+    .clientName {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      /* Neutral/1 */
+
+      color: #1b1c20;
+    }
+    .clientInfo {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      /* identical to box height, or 167% */
+
+      text-align: center;
+
+      /* Purple/1 */
+
+      color: #7571ff;
+    }
+  }
+  .testimonialCardLower {
+    margin-top: 2rem;
+    .review {
+      font-family: 'SF Pro Text';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* or 143% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      /* Neutral/3 */
+
+      color: #797b89;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonialCardBox {
+    //   width: 250px;
+    //   height: 150px;
+    border: 1px solid black;
+    margin: 1rem;
+    border: 1.5px solid #e8e9ed;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 3rem;
+    width: 330px;
+    height: 330px;
+
+    .testimonialCardUpper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .testimonialCardImg {
+        background: #000
+          url('../../assets/images/landingPage/iphone-12-tim-8.png') no-repeat;
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+      }
+      .clientName {
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+
+        /* Neutral/1 */
+
+        color: #1b1c20;
+      }
+      .clientInfo {
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+
+        text-align: center;
+
+        /* Purple/1 */
+
+        color: #7571ff;
+      }
+    }
+    .testimonialCardLower {
+      margin-top: 2rem;
+      .review {
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* Neutral/3 */
+
+        color: #797b89;
+      }
+    }
+  }
+}
